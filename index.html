@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS task</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+<div class="show-img">
+ <h1>Show Pictures</h1>
+ <div class="images">
+ <img src="" alt="messy" width="400px" height="400px" style="display:none">
+   
+   
+ </div>
+ <button class="btn-1">Messy</button>
+ <button class="btn-2">Ronaldo</button>
+ <button class="btn-3">Neymar</button>
+
+</div>
+
+
+    <script>
+    const showImg=document.querySelector('.images');
+    const li=document.querySelectorAll('li');
+    const img=document.querySelector('img');
+    const ul1=document.querySelector('.ul1');
+    const btn1=document.querySelector('.btn-1');
+    const btn2=document.querySelector('.btn-2');
+    const btn3=document.querySelector('.btn-3');
+    
+    let index;
+    var arr=['img/messy-1.webp','img/messy-2.webp','img/messy-3.jpeg'];
+    var arr2=['img/ronaldo-1.jpeg','img/ronaldo-2.jpeg','img/ronaldo-3.jpeg'];
+    var arr3=['img/neymar-1.jpg','img/neymar-2.jpeg','img/neymar-3.jpg'];
+  var count=0;
+  var count2=0;
+var count3=0;
+   
+    console.log(img);
+     btn1.addEventListener('click',()=>{
+     img.style.display='block';
+      var random=Math.floor(Math.random()*3);
+       arr2.push(random);
+       
+            for(let i=0;i<arr.length;i++){
+                if(random==i){
+                    count=count+1;
+                    console.log(count);
+                    if(count>1){
+                        break;
+                    } 
+                }
+            }
+            if(count>1){
+                img.src=arr[random+1];
+              
+            }else{
+                img.src=arr[random];
+            }
+            count=0;
+              
+     })
+      
+     btn2.addEventListener('click',()=>{
+     img.style.display='block';
+      var random=Math.floor(Math.random()*3);
+    
+       
+            for(let i=0;i<arr2.length;i++){
+                if(random==i){
+                    count2=count2+1;
+                    console.log(count);
+                    if(count2>1){
+                        break;
+                    } 
+                }
+            }
+            if(count2>1){
+                img.src=arr2[random+1];
+              
+            }else{
+                img.src=arr2[random];
+            }
+            count2=0;
+            
+            
+          
+     })
+      
+     
+     btn3.addEventListener('click',()=>{
+     img.style.display='block';
+      var random=Math.floor(Math.random()*3);
+    
+       
+            for(let i=0;i<arr2.length;i++){
+                if(random==i){
+                    count3=count3+1;
+                    console.log(count);
+                    if(count3>1){
+                        break;
+                    } 
+                }
+            }
+            if(count3>1){
+                img.src=arr3[random+1];
+              
+            }else{
+                img.src=arr3[random];
+            }
+            count3=0;
+            
+            
+          
+     })    
+      
+
+   
+   
+    
+
+    
+
+    </script>
+</body>
+</html>

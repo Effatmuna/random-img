@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-image: linear-gradient(skyblue,rgb(0, 111, 128));
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+.show-img{
+    text-align: center;
+    margin: 20px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+}
+.images img{
+    margin: 20px;
+    border-radius: 20px;
+}
+.show-img .ul1{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+}
+.show-img h1{
+    color: rgb(255, 255, 255);
+}
+.btn-1,.btn-2,.btn-3{
+    border: none;
+    padding:10px 15px;
+    margin: 0px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: palegreen;
+    
+
+}
